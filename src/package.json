@@ -14,7 +14,6 @@
   "dependencies": {
     "boom": "^7.3.0",
     "fastify": "^3.25.1",
-    "fastify-swagger": "^4.13.0",
     "mongoose": "^6.1.2",
     "nodemon": "^2.0.15"
   }

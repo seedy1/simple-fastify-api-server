@@ -11,7 +11,7 @@ const routes = require("./routes/character");
 // const fastify = Fastify({ logger: true}); 
 const PORT = 3000;
 
-// db
+// local db
 mongoose.connect("mongodb://127.0.0.1:27017/simplefastifyapi")
 .then( ()=> console.log("connected to local mongo DB") ).catch(err => console.log(err));
 
@@ -21,7 +21,7 @@ routes.forEach((route, i)=>{
     fastify.route(route);
 });
 
-
+// test route
 fastify.get('/', async (req, reply)=>{
     return {hello: "world"}
 });

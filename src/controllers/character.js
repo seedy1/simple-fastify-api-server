@@ -19,7 +19,7 @@ exports.getCharacter = async (req, reply) =>{
     try {
 
       const id = req.params.id;
-      const simgleCharacter = await Character.findById(id);
+      const singleCharacter = await Character.findById(id);
       return singleCharacter;
 
     } catch (err) {
