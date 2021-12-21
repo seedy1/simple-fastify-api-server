@@ -1,5 +1,13 @@
 import Fastify from "fastify";
+import mongoose from "mongoose";
+
+
 const fastify = Fastify({ logger: true}); 
+
+// db
+mongoose.connect("mongodb://127.0.0.1:27017/simplefastifyapi")
+.then( ()=> console.log("connected to local mongo DB") ).catch(err => console.log(err));
+
 
 const PORT = 3000;
 
